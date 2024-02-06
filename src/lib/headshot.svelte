@@ -1,0 +1,1 @@
+<img src="headshot.jpg" alt="Sam Steiger's Headshot" width="150" height="150"/>
