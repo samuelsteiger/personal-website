@@ -5,12 +5,12 @@
 
 <style>
     img {
-        height: 150px;
-        width: 150px;
+        height: 250px;
+        width: 250px;
         border-radius: 50%;
     }
 </style>
 
-<div class="bg-indigo-300 flex justify-center py-3">
+<div class="flex justify-center py-5">
     <img src={headshot_path} alt={headshot_desc}/>
 </div>
