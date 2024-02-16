@@ -1,7 +1,7 @@
 <script>
 	import Headshot from "$lib/headshot.svelte";
 	import Bio from "$lib/bio.svelte";
-	import Tag from "$lib/tag.svelte";
+	import ProjectBanner from "$lib/project_banner.svelte";
 </script>
 
 <style lang="postcss">
@@ -13,4 +13,5 @@
 
 <Headshot/>
 <Bio/>
-<Tag/>
+<ProjectBanner/>
+
