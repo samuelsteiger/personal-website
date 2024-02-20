@@ -15,7 +15,7 @@
 
 <div>
     <p class="inline-block">{skill_name}</p>
-    <div class="inline-block w-20 relative">
+    <div class="inline-block relative" style="width:100%">
         <div class="bar-bg rounded-full h-2 bottom-0 absolute" style="width:100%"/>
         <div class="bar rounded-full h-2 bottom-0 absolute" style="width:{skill_proficiency}%"/>
     </div>
