@@ -8,7 +8,7 @@
     }
 </style>
     
-<div class="relative w-1/2" style="background-color: pink;">
+<div class="relative" style="background-color: pink;">
     <img class="opacity-50 hover:opacity-60 min-w-full h-40"
     src="personal-website-banner.png" alt="Snippit of Code for this website"/>
     <div class="absolute top-1/4 right-1/2 text-xl">
