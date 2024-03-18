@@ -1,0 +1,12 @@
+img {
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+}
+
+.headshot {
+    display: flex;
+    justify-content: center;
+    padding-top: 1.25rem/* 20px */;
+    padding-bottom: 1.25rem/* 20px */;
+}
