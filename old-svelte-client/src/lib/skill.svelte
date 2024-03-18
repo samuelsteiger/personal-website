@@ -9,7 +9,7 @@
     }
 
     .bar-bg {
-        background-color: rgb(50, 18, 125);
+        background-color: white;
     }
 </style>
 
