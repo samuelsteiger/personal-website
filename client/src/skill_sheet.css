@@ -1,0 +1,17 @@
+.skill-sheet {
+    padding: 1rem/* 16px */;
+
+}
+
+.inner-border {
+    border-style: solid;
+    border-width: 8px;
+    border-color: rgb(255 255 255);
+    padding: 1.5rem/* 24px */;
+}
+
+.section-title {
+    text-align: Center;
+    font-size: 1.5rem/* 24px */;
+    line-height: 2rem/* 32px */;
+}

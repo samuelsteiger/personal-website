@@ -1,0 +1,27 @@
+.skill-title {
+    display: inline-block;
+}
+
+.bar {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+}
+
+.bar-bg {
+    background-color: white;
+    border-radius: 9999px;
+    height: 0.5rem/* 8px */;
+    bottom: 0px;
+    position: absolute;
+    width: 100%
+}
+
+.bar-fill {
+    background-color: red;
+    border-radius: 9999px;
+    height: 0.5rem/* 8px */;
+    bottom: 0px;
+    position: absolute;
+}
+
