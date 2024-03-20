@@ -1,28 +1,30 @@
 .banner {
     position: relative;
-    background-color: pink;
+    background-color: white;
+    margin: 6px;
 }
 
 .banner img {
+    
     opacity: 0.5;
     min-width: 100%;
-    height: 10rem/* 160px */;
+    height: 12rem /* 160px */;
 }
 
 .banner img:hover {
     opacity: 0.6;
 }
 
-title {
+.title {
     position: absolute;
-    top: 25%;
-    right: 50%;
+    top: 20%;
+    right: 44%;
     font-size: 1.25rem/* 20px */;
     line-height: 1.75rem/* 28px */;
 }
 
-tags {
+.tags {
     position: absolute;
-    bottom: 25%;
+    bottom: 20%;
     right: 50%;
 }
