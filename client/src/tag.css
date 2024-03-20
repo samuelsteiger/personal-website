@@ -1,0 +1,17 @@
+.tag {
+    text-align: center;
+    font-size: 0.75rem/* 12px */;
+    line-height: 1rem/* 16px */;
+}
+
+.tag p {
+    width: fit-content;
+    height: fit-content;
+    border-radius: 5%;
+    border-width: 1px;
+    border-style: solid;
+    padding-top: 0.25rem/* 4px */;
+    padding-bottom: 0.25rem/* 4px */;
+    padding-left: 0.25rem/* 4px */;
+    padding-right: 0.25rem/* 4px */;
+}
