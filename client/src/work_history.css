@@ -1,0 +1,45 @@
+.work-sheet {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: repeat(6, 1fr auto) 1fr;
+    grid-template-columns: 4rem auto;
+}
+
+.job-title {
+    color: white;
+    font-size: 1.5rem;
+    line-height: 0.5rem;
+    text-align: left;
+}
+
+.job-desc {
+    color: white;
+    font-size: 1rem;
+    line-height: 0.5rem;
+    text-align: left;
+}
+
+.bullet {
+    margin: auto auto;
+    height: 20px;
+    width: 20px;
+    background-color: white;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.between-bar {
+    margin: auto auto;
+    height: 100%;
+    width: 20px;
+    background-color: white;
+    display: inline-block;
+}
+
+.stop-bar {
+    margin: auto auto;
+    height: 20px;
+    width: 80%;
+    background-color: white;
+    display: inline-block;
+}

@@ -1,0 +1,36 @@
+[
+    {
+        "title":"Air Sampling Technican",
+        "employer":"J. C. Brodrick & Associates",
+        "datesEmployed":"June 2023 - August 2023",
+        "location":"Hauppauge, NY",
+        "desc": [
+            "Took sole responsibility for collecting, documenting and delivering air samples for analysis.",
+            "Wrote chain of custody and field drawings documents to accompany air samples.",
+            "Earned New York State Department of Labor Asbestos Air Sampling Certification.",
+            "Coordinated with clients and contractors to help projects progress in a timely fashion."
+        ]
+    },
+    {
+        "title":"Cashier",
+        "employer":"Stop & Shop",
+        "datesEmployed":"May 2022 - August 2022",
+        "location":"Rocky Point, NY",
+        "desc": [
+            "------",
+            "------",
+            "------"
+        ]
+    },
+    {
+        "title":"Sales Associate",
+        "employer":"Bed Bath & Beyond",
+        "datesEmployed":"June 2018 - August 2019",
+        "location":"Riverhead, NY",
+        "desc": [
+            "------",
+            "------",
+            "------"
+        ]
+    }
+]

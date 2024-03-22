@@ -3,6 +3,7 @@ import Headshot from "./headshot"
 import Bio from "./bio"
 import SkillSheet from "./skill_sheet"
 import ProjectBanner from "./project_banner"
+import WorkHistory from "./work_history"
 
 export default function AboutMe() {
     return( 
@@ -17,7 +18,9 @@ export default function AboutMe() {
                 <Headshot/>
                 <Bio/>
             </div>
-            <div class="Employment"></div>
+            <div class="Employment">
+                <WorkHistory/>
+            </div>
             <div class="Skills">
                 <SkillSheet/>
             </div>
