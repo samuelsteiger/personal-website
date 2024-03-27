@@ -8,7 +8,7 @@ class ProjectBanner extends React.Component {
         return <>
             <div class="banner">
                 <img src={banner} alt="Snippit of Code for this website"/>
-                <div class="title">
+                <div class="project-title">
                     <h1>Sample Project</h1>
                 </div>
                 <div class="tags">
