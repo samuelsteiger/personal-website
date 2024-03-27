@@ -25,8 +25,7 @@ export default function AboutMe() {
                 <SkillSheet/>
             </div>
             <div class="Projects">
-                <ProjectBanner/>
-                <ProjectBanner/>
+                
 
             </div>
         </div>
