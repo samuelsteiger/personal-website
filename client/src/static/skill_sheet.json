@@ -1,0 +1,68 @@
+[
+    {
+        "section_title": "Soft Skills",
+        "skills": [
+            {
+                "name": "Project Design",
+                "proficiency": "40"
+            },
+            {
+                "name": "Communication",
+                "proficiency": "40"
+            },
+            {
+                "name": "Leadership",
+                "proficiency": "40"
+            },
+            {
+                "name": "Leadership",
+                "proficiency": "40"
+            }
+        ]
+    },
+    {
+        "section_title": "Technical Skills",
+        "skills": [
+            {
+                "name": "C++",
+                "proficiency": "40"
+            },
+            {
+                "name": "Python",
+                "proficiency": "40"
+            },
+            {
+                "name": "Javascript",
+                "proficiency": "40"
+            },
+            {
+                "name": "HTML/CSS",
+                "proficiency": "40"
+            },
+            {
+                "name": "SQL",
+                "proficiency": "40"
+            },
+            {
+                "name": "MongoDB",
+                "proficiency": "40"
+            },
+            {
+                "name": "Jupyter Notebook",
+                "proficiency": "40"
+            },
+            {
+                "name": "React",
+                "proficiency": "40"
+            },
+            {
+                "name": "Node.js",
+                "proficiency": "40"
+            },
+            {
+                "name": "Pandas",
+                "proficiency": "40"
+            }
+        ]
+    }
+]
