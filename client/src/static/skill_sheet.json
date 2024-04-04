@@ -4,19 +4,15 @@
         "skills": [
             {
                 "name": "Project Design",
-                "proficiency": "40"
+                "proficiency": "60"
             },
             {
                 "name": "Communication",
-                "proficiency": "40"
+                "proficiency": "50"
             },
             {
                 "name": "Leadership",
-                "proficiency": "40"
-            },
-            {
-                "name": "Leadership",
-                "proficiency": "40"
+                "proficiency": "70"
             }
         ]
     },
@@ -25,11 +21,11 @@
         "skills": [
             {
                 "name": "C++",
-                "proficiency": "40"
+                "proficiency": "60"
             },
             {
                 "name": "Python",
-                "proficiency": "40"
+                "proficiency": "55"
             },
             {
                 "name": "Javascript",
@@ -37,11 +33,11 @@
             },
             {
                 "name": "HTML/CSS",
-                "proficiency": "40"
+                "proficiency": "60"
             },
             {
                 "name": "SQL",
-                "proficiency": "40"
+                "proficiency": "70"
             },
             {
                 "name": "MongoDB",
@@ -49,11 +45,11 @@
             },
             {
                 "name": "Jupyter Notebook",
-                "proficiency": "40"
+                "proficiency": "70"
             },
             {
                 "name": "React",
-                "proficiency": "40"
+                "proficiency": "55"
             },
             {
                 "name": "Node.js",
@@ -61,7 +57,7 @@
             },
             {
                 "name": "Pandas",
-                "proficiency": "40"
+                "proficiency": "50"
             }
         ]
     }
