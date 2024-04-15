@@ -1,0 +1,49 @@
+.blog-post {
+    background-color: white;
+    width: 60%;
+    margin: 75px auto;
+    border-radius: 0.5%;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: min-content min-content auto;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "post-title post-datetime"
+        "post-author post-datetime"
+        "post-text post-text";
+}
+
+.post-title { 
+    grid-area: post-title;
+    text-align: left;
+    font-size: 2rem;
+    margin: 1rem;
+
+}
+
+.post-author { 
+    grid-area: post-author; 
+    text-align: left;
+    font-size: 1.5rem;
+    margin: 1rem;
+}
+
+.post-datetime { 
+    grid-area: post-datetime;
+    text-align: right;
+    font-size: 1.5rem;
+    margin: 1rem;
+    margin-top: 0.5rem;
+
+}
+
+.post-text { 
+    grid-area: post-text;
+    margin: 2rem;
+}
+
+p {
+    color: black;
+}
