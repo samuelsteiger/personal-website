@@ -17,19 +17,15 @@ export default class BlogPost extends React.Component {
     }
 
     componentDidMount() {
-        console.log(this.state)
         var self = this;
         axios
         .get("http://localhost:8080/blog/")
         .then(function (response) {
-            console.log(response)
             self.setState(response.data);
-            
         });
     }
 
     render() {
-        console.log(this.state)
         return (
             <div class = "blog-post">
                 <p class = "post-title">{this.state["title"]}</p>
