@@ -41,13 +41,6 @@ h1 {
     place-items: center;
 }
 
-.Bio { grid-area: Bio; }
-
-.Employment { grid-area: Employment; }
-
-.Skills { grid-area: Skills; }
-
-.Projects { grid-area: Projects; }
 
 a:link {
     text-decoration: none;

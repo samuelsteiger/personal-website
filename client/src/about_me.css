@@ -11,7 +11,7 @@
     font-size: 25px;
 }
 
-p {
+.about-me p {
     color: white;
 }
 
@@ -34,3 +34,12 @@ h1 {
         "Employment Skills"
         "Projects Projects";
 }
+
+
+.Bio { grid-area: Bio; }
+
+.Employment { grid-area: Employment; }
+
+.Skills { grid-area: Skills; }
+
+.Projects { grid-area: Projects; }

@@ -2,16 +2,19 @@
     text-align: center;
     padding-top: 0.75rem/* 12px */;
     padding-bottom: 0.75rem/* 12px */;
+    color:white;
 }
 
 .name {
     font-size: 3rem;
+    color:white;
 }
 
 .title {
     font-size: 1.5rem/* 24px */;
     line-height: 2rem/* 32px */;
     padding-bottom: 0.5rem/* 8px */;
+    color:white;
 }
 
 .bio-text {
@@ -22,4 +25,9 @@
     padding-right: 10rem/* 160px */;
     padding-top: 1.25rem/* 20px */;
     padding-bottom: 1.25rem/* 20px */;
+    color: white;
+}
+
+.bio-text p {
+    color: white;
 }
