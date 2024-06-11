@@ -3,6 +3,7 @@ import Headshot from "./headshot"
 import Bio from "./bio"
 import SkillSheet from "./skill_sheet"
 import WorkHistory from "./work_history"
+import ContactMe from "./contact_me"
 
 export default function AboutMe() {
     return( 
@@ -19,7 +20,9 @@ export default function AboutMe() {
             </div>
             <div class="Projects">
                 
-
+            </div>
+            <div class="Contact-Me">
+                <ContactMe/>
             </div>
     </div>
     )

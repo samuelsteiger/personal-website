@@ -32,7 +32,8 @@ h1 {
     grid-template-areas:
         "Bio Bio"
         "Employment Skills"
-        "Projects Projects";
+        "Projects Projects"
+        "Contact-Me Contact-Me";
 }
 
 
@@ -43,3 +44,5 @@ h1 {
 .Skills { grid-area: Skills; }
 
 .Projects { grid-area: Projects; }
+
+.Contact-Me { grid-area: Contact-Me; }
