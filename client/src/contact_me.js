@@ -1,11 +1,13 @@
 import "./contact_me.css"
 import { useState } from 'react';
 import axios from 'axios'
+import ErrorMsg from "./error_msg";
 
 export default function ContactMe() {
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [text, setText] = useState('');
+    const [error_msgs, setErrMsg] = useState([]);
 
     function sayHello() {
         
@@ -31,7 +33,11 @@ export default function ContactMe() {
             headers: { "Content-Type": "application/json" },
         })
         .catch((error) => {
-            console.log(error);
+            var errors = []
+            for (let err of error.response.data.errors) {
+                errors.push(err.msg + " in "+err.path+".");
+            }
+            setErrMsg(errors)
         });
     }
 
@@ -46,6 +52,7 @@ export default function ContactMe() {
             <input onChange={onChangeHandler(setName)} class = "small-text-input" type="text" id="name" name="name" placeholder="Name"/><br/>
             <input onChange={onChangeHandler(setEmail)} class = "small-text-input" type="text" id="email" name="email" placeholder="Email"/><br/>
             <textarea onChange={onChangeHandler(setText)} class = "large-text-input" type="text" id="text" name="text" placeholder="Your Message"/><br/>
+            <ErrorMsg error_msgs = {error_msgs}/>
             <button onClick={submitNote} class = "button-input" type="button" id="share" name="share">Share</button>
         </form> 
     </>
