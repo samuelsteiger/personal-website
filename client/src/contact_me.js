@@ -29,6 +29,9 @@ export default function ContactMe() {
             url: "http://localhost:8080/note",
             data: noteFormData,
             headers: { "Content-Type": "application/json" },
+        })
+        .catch((error) => {
+            console.log(error);
         });
     }
 
