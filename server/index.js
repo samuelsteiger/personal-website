@@ -5,6 +5,7 @@ const { body, validationResult } = require("express-validator")
 //import handleNote from "./src/handle-note";
 const { handleNote } = require("./src/handle-note")
 const { getClient } = require("./src/db-connect")
+const { queryBlog } = require("./src/queryBlog")
 
 const app = express();
 const cors = require('cors')
@@ -20,8 +21,8 @@ app.get("/", (req, res) => {
     res.status(200).send("Hello from express.");
 });
 
-app.get("/*", (req, res) => {
-    res.redirect("/")
+app.get("/blog", (req, res) => {
+    queryBlog(req, res, pgclient)
 });
 
 app.post("/note",
@@ -37,6 +38,10 @@ app.post("/note",
         }
   
         handleNote(req, res, pgclient);
+});
+
+app.get("/*", (req, res) => {
+    res.redirect("/")
 });
 
 app.listen(PORT, () => {

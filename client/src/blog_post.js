@@ -5,6 +5,7 @@ import React from 'react';
 
 export default class BlogPost extends React.Component {
     constructor(props) {
+        console.log(props)
         super(props);
         this.state = {
             "bid": 1,
@@ -16,25 +17,16 @@ export default class BlogPost extends React.Component {
         };
     }
 
-    componentDidMount() {
-        var self = this;
-        axios
-        .get("http://localhost:8080/blog/")
-        .then(function (response) {
-            self.setState(response.data);
-        });
-    }
-
     render() {
+        console.log(this.props)
         return (
             <div class = "blog-post">
-                <p class = "post-title">{this.state["title"]}</p>
+                <p class = "post-title">{this.props.post.title}</p>
                 <div class = "post-datetime">
-                    <p>{this.state["date"]}</p>
-                    <p>{this.state["time"]}</p>
+                    <p>{this.props.post.date}</p>
                 </div>
-                <p class = "post-author">{this.state["author"]}</p>
-                <p class = "post-text">{this.state["text"]}</p>
+                <p class = "post-author">{this.props.post.author}</p>
+                <p class = "post-text">{this.props.post.body}</p>
             </div>
         );
     }
