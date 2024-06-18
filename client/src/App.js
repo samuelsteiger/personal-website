@@ -4,6 +4,7 @@ import PersonalWebsite from './personal_website.js';
 import AboutMe from './about_me.js';
 import Blog from './blog.js'
 import Projects from "./projects.js";
+import ErrorPage from "./error_page.js";
 
 
 
@@ -16,7 +17,8 @@ function App() {
             <Route index element={<AboutMe />} />
             <Route path="projects" element={<Projects/>} />
             <Route path="blog" element={<Blog/>} />
-            <Route path="*" element={<p>Sorry, nothing here.</p>} />
+            <Route path="error" element={<ErrorPage/>} />
+            <Route path="*" element={<ErrorPage/>} />
           </Route>
         </Routes>
       </BrowserRouter>
