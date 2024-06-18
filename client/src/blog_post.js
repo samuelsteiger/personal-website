@@ -1,6 +1,4 @@
 import "./blog_post.css"
-import posts from "./static/blog_posts.json"
-import axios from 'axios';
 import React from 'react';
 
 export default class BlogPost extends React.Component {
