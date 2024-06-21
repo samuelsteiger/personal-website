@@ -1,21 +1,28 @@
 const express = require("express");
 const path = require("path");
 const { body, validationResult } = require("express-validator")
+const url = require("url")
 
-//import handleNote from "./src/handle-note";
 const { handleNote } = require("./src/handle-note")
 const { getClient } = require("./src/db-connect")
 const { queryBlog } = require("./src/queryBlog")
 
 const app = express();
+
+var production = false
+process.argv.forEach(function (val, index, array) {
+    if (val === "-p")
+        production = true;
+  });
 const cors = require('cors')
-const PORT = 8080;
+const PORT = production ? 3000 : 8080;
 
 const pgclient = getClient();
 
 app.use(express.static(path.join(__dirname, '../client/build')));
 app.use(express.json())
-app.use(cors())
+if(!production)
+    app.use(cors())
 
 app.get("/", (req, res) => {
     res.status(200).send("Hello from express.");
@@ -45,5 +52,5 @@ app.get("/*", (req, res) => {
 });
 
 app.listen(PORT, () => {
-  console.log(`Express server running at http://localhost:${PORT}/`);
+  console.log(`Express server running on port `+ PORT);
 });
