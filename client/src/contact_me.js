@@ -2,6 +2,7 @@ import "./contact_me.css"
 import { useState } from 'react';
 import axios from 'axios'
 import ErrorMsg from "./error_msg";
+import getServerURL from "./routing";
 
 export default function ContactMe() {
     const [name, setName] = useState('');
@@ -28,7 +29,7 @@ export default function ContactMe() {
 
         axios({
             method: "post",
-            url: "http://localhost:8080/note",
+            url: getServerURL()+"note",
             data: noteFormData,
             headers: { "Content-Type": "application/json" },
         })
