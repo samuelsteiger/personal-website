@@ -1,9 +1,11 @@
-p {
-    color: white
-}
+
 
 .project {
     padding-bottom: 5%;
+}
+
+.project p{
+    color: white;
 }
 
 .project-title {
