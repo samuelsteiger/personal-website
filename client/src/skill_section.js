@@ -1,14 +1,14 @@
 import Skill from './skill.js';
 
-export default function SkillSection({section}) {
+export default function SkillSection({section, title}) {
     return( 
         <>
-            <h1 class="section-title">{section["section_title"]}</h1>
-            {section["skills"].map((entry, index) => {
+            <h1 class="section-title">{title}</h1>
+            {section.map((entry, index) => {
                 return (
                     <Skill
                         name={entry["name"]}
-                        proficiency={entry["proficiency"]}
+                        proficiency={entry["level"]}
                     />
                 );
             })}

@@ -6,6 +6,7 @@ const url = require("url")
 const { handleNote } = require("./src/handle-note")
 const { getClient } = require("./src/db-connect")
 const { queryBlog } = require("./src/queryBlog")
+const { querySkills } = require("./src/querySkills");
 
 const app = express();
 
@@ -30,6 +31,10 @@ app.get("/", (req, res) => {
 
 app.get("/blog", (req, res) => {
     queryBlog(req, res, pgclient)
+});
+
+app.get("/skills", (req, res) => {
+    querySkills(req, res, pgclient)
 });
 
 app.post("/note",
