@@ -1,4 +1,4 @@
-# [Samuel Steiger's Personal Website](samcsteiger.net)
+# [Samuel Steiger's Personal Website](https://samcsteiger.net)
 
 Welcome to my personal website! You can check it out by cloning the repo or clicking the link above. This website is meant to reflect my progress and growth as a developer. I will endever to return and update this repo as I learn more and keep it up to date with everythin I know about web development. the content of this website serves as an extension to a one-page resume, showcasing more about myself.
 
