@@ -1,6 +1,6 @@
 const express = require("express");
 const path = require("path");
-const { body, validationResult } = require("express-validator")
+//const { body, validationResult } = require("express-validator")
 const url = require("url")
 
 const { handleNote } = require("./src/handle-note")
@@ -29,14 +29,14 @@ app.get("/", (req, res) => {
     res.status(200).send("Hello from express.");
 });
 
-app.get("/blog", (req, res) => {
+app.get("/blog-posts", (req, res) => {
     queryBlog(req, res, pgclient)
 });
 
 app.get("/skills", (req, res) => {
     querySkills(req, res, pgclient)
 });
-
+/*
 app.post("/note",
     [[
         body("name").isLength({ max: 50 }).escape().trim(),
@@ -51,7 +51,7 @@ app.post("/note",
   
         handleNote(req, res, pgclient);
 });
-
+*/
 app.get("/*", (req, res) => {
     res.redirect("/")
 });
