@@ -14,7 +14,7 @@ export default function Blog() {
         document.title = 'Blog';
 
         axios
-        .get(getServerURL()+"blog/")
+        .get(getServerURL()+"blog-posts/")
         .then(function (response) {
             setPosts(response.data)
         }).catch((error) => {
