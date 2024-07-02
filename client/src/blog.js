@@ -3,7 +3,6 @@ import BlogPost from "./blog_post"
 import { useState, useEffect } from "react"
 import axios from 'axios'
 import { useNavigate } from "react-router-dom"
-import getServerURL  from "./routing"
 
 
 export default function Blog() {

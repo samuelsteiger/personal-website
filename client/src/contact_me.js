@@ -2,7 +2,6 @@ import "./contact_me.css"
 import { useState } from 'react';
 import axios from 'axios'
 import ErrorMsg from "./error_msg";
-import getServerURL from "./routing";
 
 export default function ContactMe() {
     const [name, setName] = useState('');

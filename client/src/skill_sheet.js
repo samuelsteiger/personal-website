@@ -3,7 +3,6 @@ import SkillSection from "./skill_section";
 import { useState, useEffect } from "react"
 import axios from 'axios'
 import { useNavigate } from "react-router-dom"
-import getServerURL  from "./routing"
 
 export default function SkillSheet() {
     const navigate = useNavigate()
