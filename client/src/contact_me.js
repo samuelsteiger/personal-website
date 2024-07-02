@@ -28,7 +28,7 @@ export default function ContactMe() {
 
         axios({
             method: "post",
-            url: getServerURL()+"note",
+            url: "note/",
             data: noteFormData,
             headers: { "Content-Type": "application/json" },
         })
