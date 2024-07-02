@@ -14,7 +14,7 @@ export default function SkillSheet() {
         
 
         axios
-        .get(getServerURL()+"skills/")
+        .get("skills/")
         .then(function (response) {
             setSkills(response.data)
         }).catch((error) => {
