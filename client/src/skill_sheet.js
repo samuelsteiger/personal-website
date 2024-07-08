@@ -3,6 +3,7 @@ import SkillSection from "./skill_section";
 import { useState, useEffect } from "react"
 import axios from 'axios'
 import { useNavigate } from "react-router-dom"
+import getAddress from "./development_routing";
 
 export default function SkillSheet() {
     const navigate = useNavigate()
@@ -13,7 +14,7 @@ export default function SkillSheet() {
         
 
         axios
-        .get("skills/")
+        .get(getAddress()+"skills/")
         .then(function (response) {
             setSkills(response.data)
         }).catch((error) => {
