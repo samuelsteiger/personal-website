@@ -1,6 +1,5 @@
 const express = require("express");
 const path = require("path");
-//const { body, validationResult } = require("express-validator")
 const url = require("url")
 
 const { handleNote } = require("./src/handle-note")
@@ -25,6 +24,8 @@ app.use(express.json())
 if(!production)
     app.use(cors())
 
+app.use(require('sanitize').middleware);
+
 app.get("/", (req, res) => {
     res.status(200).send("Hello from express.");
 });
@@ -36,22 +37,12 @@ app.get("/blog-posts", (req, res) => {
 app.get("/skills", (req, res) => {
     querySkills(req, res, pgclient)
 });
-/*
+
 app.post("/note",
-    [[
-        body("name").isLength({ max: 50 }).escape().trim(),
-        body("email").isLength({ max: 50 }).isEmail().normalizeEmail().escape().trim(),
-        body("body").isLength({ max: 500 }).escape().trim()
-    ]], 
     (req, res) => {
-        const err = validationResult(req);
-        if (!err.isEmpty()) {
-            return res.status(400).json({ errors: err.array() });
-        }
-  
         handleNote(req, res, pgclient);
 });
-*/
+
 app.get("/*", (req, res) => {
     res.redirect("/")
 });
