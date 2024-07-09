@@ -25,7 +25,11 @@ h1 {
 }
 
 .bottle {
-    background-color: #00A366;
+    background-color: 
+        #00A366
+        ;
+        background: linear-gradient(0deg,rgba(0,160,105,1) ,rgba(0,143,82,0.75)),
+        url(static/noise.svg);
     width: 100%;
     min-height: 100vh;
     
