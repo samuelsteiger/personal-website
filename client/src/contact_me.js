@@ -33,12 +33,14 @@ export default function ContactMe() {
             data: noteFormData,
             headers: { "Content-Type": "application/json" },
         })
+        .then((res) => {
+            setErrMsg(res.data)
+        })
         .catch((error) => {
-            var errors = []
-            for (let err of error.response.data.errors) {
-                errors.push(err.msg + " in "+err.path+".");
+            if(error.response){
+                setErrMsg(error.response.data)
             }
-            setErrMsg(errors)
+            
         });
     }
 
