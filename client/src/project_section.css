@@ -1,0 +1,35 @@
+.project p{
+    color: white;
+}
+
+.project-title {
+    font-size: 50px;
+    text-align: center;
+
+}
+
+.project-section {
+    font-size: 35px;
+    text-align: left;
+    padding-left: 30px;
+}
+
+.project-section img {
+    float: right;
+    padding-right: 30px;
+    padding-top: 40px;
+    padding-bottom: 60px;
+}
+
+.project-subsection {
+    font-size: 25px;
+    text-align: left;
+    padding-left: 45px;
+}
+
+
+.project-body {
+    font-size: 20px;
+    text-align: left;
+    padding-left: 45px;
+}

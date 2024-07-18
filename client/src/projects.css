@@ -1,26 +1,3 @@
-
-
 .project {
     padding-bottom: 5%;
-}
-
-.project p{
-    color: white;
-}
-
-.project-title {
-    font-size: 50px;
-}
-
-.project-section {
-    font-size: 35px;
-}
-
-.project-subsection {
-    font-size: 25px;
-}
-
-
-.project-body {
-    font-size: 20px;
 }
