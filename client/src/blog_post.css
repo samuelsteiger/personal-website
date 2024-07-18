@@ -57,6 +57,7 @@ p .post-datetime {
 .post-text { 
     grid-area: post-text;
     margin: 2rem;
+    font-size: 1.1rem;
     color: black;
 }
 

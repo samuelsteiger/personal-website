@@ -22,11 +22,9 @@ export default function Blog() {
         });
       }, []);
 
-      
-
     return( 
     <div class = "blog">
-        {posts.map((post) => {
+        {posts.map((post,index) => {
             return (<BlogPost key={post.bid} post={post}/>);
         })}
         

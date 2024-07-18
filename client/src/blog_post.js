@@ -15,7 +15,6 @@ export default class BlogPost extends React.Component {
     }
     
     render() {
-        console.log(this.props.post)
         return (
             <div class = "blog-post">
                 <p class = "post-title">{this.props.post.title}</p>
